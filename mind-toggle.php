@@ -13,7 +13,7 @@ require_once dirname(__FILE__) . '/inc/settings.php';
 require_once dirname(__FILE__) .  'inc/updater.php';
 
 if ( is_admin() ) {
-    new BFIGitHubPluginUpdater( __FILE__, 'myGitHubUsername', "Repo-Name" );
+    new BFIGitHubPluginUpdater( __FILE__, 'thejameswilliam', 'toggle-dashboard' );
 }
 
 class mindToggl
