@@ -3,7 +3,7 @@
 /*
  * Plugin Name: Mindshare Toggle Reports
  * Description: A Wordpress Plugin for displaying client information from Toggle on the dashboard.
- * Version: 0.1.0
+ * Version: 1.2.0
  * Author: Mindshare Labs, Inc
  * Author URI: https://mind.sh/are
  * License: MIT License
