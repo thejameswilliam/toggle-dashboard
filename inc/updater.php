@@ -161,8 +161,7 @@ class BFIGitHubPluginUpdater
         // Remember if our plugin was previously activated
         $wasActivated = is_plugin_active($this->slug);
 
-        // Since we are hosted in GitHub, our plugin folder would have a dirname of
-// reponame-tagname change it to our original one:
+        // Since we are hosted in GitHub, our plugin folder would have a dirname of reponame-tagname change it to our original one:
         global $wp_filesystem;
         $pluginFolder = WP_PLUGIN_DIR . DIRECTORY_SEPARATOR . dirname($this->slug);
         $wp_filesystem->move($result['destination'], $pluginFolder);

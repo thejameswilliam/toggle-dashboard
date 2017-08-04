@@ -67,12 +67,17 @@ function mind_toggl_client_id_render()
         <select name='mind_toggl_settings[mind_toggl_client_id]'>
             <?php
             foreach ($clients as $client) :
+
+                $selected = $options['mind_toggl_client_id'];
+                if($selected == '') :
+                    $selected = 1;
+                endif;
                 ?>
-                <option value='<?php echo $client->id; ?>' <?php selected($options['mind_toggl_client_id'], $client->id); ?>>
+                <option value='<?php echo $client->id; ?>' <?php selected($selected, $client->id); ?>>
                     <?php echo $client->name; ?>
                 </option>
                 <?php
-           endforeach;
+            endforeach;
             ?>
         </select>
         <?php
