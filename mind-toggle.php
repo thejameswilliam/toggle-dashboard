@@ -1,16 +1,22 @@
 <?php
 
 /*
-Plugin Name: Mindshare Toggle Reports
-
+ * Plugin Name: Mindshare Toggle Reports
+ * Description: A Wordpress Plugin for displaying client information from Toggle on the dashboard.
+ * Version: 0.1.0
+ * Author: Mindshare Labs, Inc
+ * Author URI: https://mind.sh/are
+ * License: MIT License
+ * Text Domain: WordPress
 */
+
 
 
 require dirname(__FILE__) . '/vendor/autoload.php';
 
 require_once dirname(__FILE__) . '/inc/dashboard.php';
 require_once dirname(__FILE__) . '/inc/settings.php';
-require_once dirname(__FILE__) .  'inc/updater.php';
+require_once dirname(__FILE__) .  '/inc/updater.php';
 
 if ( is_admin() ) {
     new BFIGitHubPluginUpdater( __FILE__, 'thejameswilliam', 'toggle-dashboard' );
